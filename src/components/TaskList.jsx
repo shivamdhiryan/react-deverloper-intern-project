@@ -40,11 +40,11 @@ const TaskList = () => {
    setFilterTask(filterData);
   },[task,searchTask])
   return (
-    <div className="task w-full lg:h-[130vh] sm:h-[230vh] bg-gray-300  sm:p-8 lg:p-4">
-      <div className='w-[100%] h-[2%] flex justify-center'>
+    <div className="task w-full h-auto bg-gray-300  p-[20px] md:p-[40px]">
+      <div className='w-[100%] flex justify-center'>
         <Link to='/'> <button className='bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded'>Add New Task</button></Link>
       </div>
-      <div className='w-[100%] h-[5%] mt-8 flex justify-center gap-4'>
+      <div className='w-[100%] h-10 mt-8 flex justify-center gap-4'>
       <input
             type="text"
             id="title"
@@ -55,11 +55,11 @@ const TaskList = () => {
           />
           <button className='bg-red-500  hover:bg-red-700 text-white px-4 rounded'>Search</button>
       </div>
-      <div className='w-[100%] h-[93%]  flex lg:flex-row sm:flex-col gap-6 flex-wrap'> 
+      <div className='w-[100%] h-auto  flex lg:flex-row sm:flex-col gap-6 flex-wrap justify-center'> 
         {filerTask.map((task, id) => (
-          <div key={id} className="bg-white shadow-lg rounded-lg p-6 lg:w-[30%] lg:h-[35%] sm:w-[80%] sm:h-[20%] lg:mt-10 sm:mt-6">
+          <div key={id} className="bg-white shadow-lg rounded-lg p-6 w-[90%] md:w-[30%] h-5/6 mt-6">
             <h1 className="text-xl font-bold mb-4 text-center text-gray-800 uppercase">{task.newTask.title}</h1>
-            <p className="text-gray-600  font-serif bg-slate-200 p-1 mb-2 rounded w-[100%] h-[44%]">
+            <p className="text-gray-600  font-serif bg-slate-200 p-1 mb-2 rounded w-[100%] h-20">
               {task.newTask.description}
             </p>
             <div className='w-[100%] flex justify-between'>

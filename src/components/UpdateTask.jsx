@@ -40,8 +40,8 @@ const UpdateTask = () => {
 
 
   return (
-    <div className='w-full h-screen bg-slate-500 flex items-center'>
-      <form className="w-[40%] mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div className='w-full h-screen bg-slate-300 flex items-center'>
+      <form className="md:w-[40%] w-[90%] mx-auto p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold mb-4">Add New Task</h2>
 
         {/* Title */}
